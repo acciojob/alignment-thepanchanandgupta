@@ -1,16 +1,138 @@
 <!DOCTYPE html>
 
 <html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title style="text-align: center">HTML Assignment 3</title>
+		<style>
+			.middle {
+				border: 0px solid black;
+				border-spacing: 1px;
+				margin-bottom: 50px;
+			}
+			td {
+				padding: 1px;
+			}
+			#table-1, #table-2, #table-3 {
+				border-collapse: collapse;
+	            width: 100%;
+			}
+			 #table-1, #table-1 td, #table-2, #table-2 td, #table-3, #table-3 td {
+	            border: 1px solid black;
+	        }
+			.green {
+				background-color: green;
+			}
+			.blue {
+				background-color: blue;
+			}
+			.center {
+				text-align: center;
+			}
+			.right {
+				text-align: right;
+			}
+			#table-3 img{
+				display: block;
+				margin: auto
+			}
+		</style>
+	</head>
+	<body>
+		<!-- the entire body must be written by student -->
+		<div>
+			<h1 style="text-align: center">HTML Assignment #3</h1>
+			<table class="middle" id="table-1">
+				<tr style="text-align: left">
+					<td id="t11">
+						left
+					</td>
+					<td id="t12"  class="center">
+						center
+					</td>
+					<td id="t13" class="right">
+						right
+					</td>
+				</tr>
+				<tr>
+					<td id="t21">
+						left
+					</td>
+					<td id="t22" class="center">
+						center
+					</td>
+					<td id="t23" class="right">
+						right
+					</td>
+				</tr>
+				<tr>
+					<td id="t31">
+						left
+					</td>
+					<td id="t32"  class="center">
+						center
+					</td>
+					<td id="t33" class="right">
+						right
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<table class="middle" id="table-2">
+        <!-- Row 1 -->
+        <tr>
+            <td colspan="6"><p></p></td>
+        </tr>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+        <!-- Row 2 -->
+        <tr>
+            <td rowspan="4"><p></p></td>
+            <td><p></p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+        <!-- Row 3 -->
+        <tr>
+            <td><p></p></td>
+            <td colspan="3" rowspan="2"></td>
+            <td colspan="3"></td>
+        </tr>
 
-</body>
+        <!-- Row 4 -->
+        <tr>
+            <td><p></p></td>
+            <td colspan="3"></td>
+        </tr>
 
+        <!-- Row 5 -->
+        <tr>
+            <td><p></p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <!-- Row 6 -->
+        <tr>
+            <td colspan="6"><p></p></td>
+        </tr>
+    </table>
+		</div>
+		<div>
+			<table class="middle" id="table-3">
+				<tr style="background-color:green"><td><p></p></td></tr>
+				<tr><td><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" id="t-image"></td></tr>
+				<tr style="background-color:blue"><td><p></p></td></tr>
+				<tr></tr>
+				<tr></tr>
+			</table>
+		</div>
+	    <script type="text/javascript" src="./script.js">
+		</script>
+	</body>
 </html>
